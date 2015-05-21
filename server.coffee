@@ -34,7 +34,7 @@ latest = moment(data.whenthefuckissydjs.slice(-1)[0])
 format = (date) ->
   diff = date - moment()
   if diff > moment.duration 1, 'week'
-    "The fucking #{date.format 'Do'} of #{date.format 'MMM'}"
+    "The fucking #{date.format 'Do'} of #{date.format 'MMMM'}"
   else if diff > moment.duration 18, 'hours'
     "On fucking #{date.format 'dddd'}"
   else if diff > 0
